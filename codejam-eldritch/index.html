@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Древний Ужас</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="rules-container non-active">
+      <div class="rules"></div>
+    </div>
+    <div class="ancient-container">
+      <div class="choose-anc-card-title">Выберите карту Древнего</div>
+      <div class="ancient-cont-cards">
+        <div class="ancient-card azathoth-card ancient-card-active"></div>
+        <div class="ancient-card cthulthu-card"></div>
+        <div class="ancient-card iog-sothoth-card"></div>
+        <div class="ancient-card shub-niggurath-card"></div>
+      </div>
+    </div>
+    <main>
+
+      <div class="preset-container_bg">
+        <div class="preset-container">
+          <div class="anc-set">
+            <div class=" current-ancient-card"></div>
+            <button class="change-ancient-btn">Изменить Древнего</button>
+          </div>
+        </div>
+        <div class="levels">
+          <div class="levels-container">
+            <button class="level-btn very-easy-level" name="very-easy">Новичок</button>
+            <button class="level-btn easy-level" name="easy">Легкий</button>
+            <button class="level-btn normal-level level-btn-active" name="normal">Нормальный</button>
+            <button class="level-btn high-level" name="high">Сложный</button>
+            <button class="level-btn very-high-level" name="very-high">Кошмарный</button>
+          </div>
+          <div class="levels-desc"></div>
+        </div>
+
+        <div class="rules-btn-container">
+          <button class="rules-btn">Правила</button>
+        </div>
+
+      </div>
+      <div class="main-conent">
+        <div class="tracker">
+          <div class="tracker-stage stage1">
+            <div class="stage-name">Этап I:</div>
+            <div class="stage1-green stage-item"></div>
+            <div class="stage1-brown stage-item"></div>
+            <div class="stage1-blue stage-item"></div>
+          </div>
+          <div class="tracker-stage stage2">
+            <div class="stage-name">Этап II:</div>
+            <div class="stage2-green stage-item"></div>
+            <div class="stage2-brown stage-item"></div>
+            <div class="stage2-blue stage-item"></div>
+          </div>
+          <div class="tracker-stage stage3">
+            <div class="stage-name">Этап III:</div>
+            <div class="stage3-green stage-item"></div>
+            <div class="stage3-brown stage-item"></div>
+            <div class="stage3-blue stage-item"></div>
+          </div>
+        </div>
+
+        <div class="cards-container">
+          <div class="deck hidden-block"></div>
+          <div class="current-card"></div>
+        </div>
+
+        <button class="shuffle-btn">Замешать колоду!</button>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-information">
+        <div class="git-rss">
+          <div class="github"> <a href="https://github.com/mracoon" class="github-link"></a></div>
+        </div>
+        <div class="year">© 2022 </div>
+        <div class="footer-links">
+          <div class="git-rss">
+            <div class="rss"><a href="https://rs.school/js-stage0/" class="rss-link"></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
