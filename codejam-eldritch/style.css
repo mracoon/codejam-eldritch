@@ -1,0 +1,616 @@
+body {
+  margin: 0;
+  background-image: url('./assets/home.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  /*max-width: 1280px;*/
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: space-between;
+
+}
+
+header {
+  height: 50px;
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  /*background-color: blanchedalmond;*/
+}
+
+
+.ancient-container {
+  display: flex;
+  display: none;
+  flex-wrap: wrap;
+  height: 356px;
+  /*left: 81px;*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  /* top: 25%;
+  left: 25%;*/
+}
+
+.ancient-card {
+  width: 207px;
+  height: 308px;
+  max-width: 100%;
+  margin: 5px;
+  opacity: 1;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(0 0 0 / 40%);
+  background-blend-mode: multiply;
+  transition: top 1s;
+  transition: 0.7s;
+  border-radius: 19px;
+}
+
+.ancient-card:hover {
+
+
+  opacity: 1;
+  top: -30px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid #cb0000;
+}
+
+.azathoth-card {
+  background-image: url(./assets/Ancients/Azathoth.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(349deg);
+  bottom: 15px;
+  top: 21px;
+}
+
+
+.cthulthu-card {
+  background-image: url(./assets/Ancients/Cthulthu.png);
+  background-size: cover;
+  left: 150px;
+  top: 0;
+  transform: rotate(353deg);
+  background-repeat: no-repeat;
+}
+
+.iog-sothoth-card {
+  background-image: url(./assets/Ancients/IogSothoth.png);
+  background-size: cover;
+  left: 300px;
+  top: 0;
+  transform: rotate(2deg);
+  background-repeat: no-repeat;
+}
+
+.shub-niggurath-card {
+  background-image: url(./assets/Ancients/ShubNiggurath.png);
+  background-size: cover;
+  left: 450px;
+  top: 18px;
+  transform: rotate(9deg);
+  background-repeat: no-repeat;
+}
+
+.preset-container_bg {
+  background-image: url(./assets/rules1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 11px;
+  padding: 30px 30px;
+  background-color: rgb(136 135 133 / 42%);
+  background-blend-mode: multiply;
+  margin: 0 10px;
+  width: 25%;
+  min-width: 235px;
+
+}
+
+.preset-container {
+
+  /* background-image: url('./assets/rules1.jpg');*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center;*/
+}
+
+
+
+/*
+.ancient-container {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  display: none;
+
+}
+
+.ancient-card {
+  width: 200px;
+  height: 260px;
+  max-width: 100%;
+  margin: 5px;
+  opacity: 0.5;
+
+  opacity: 1;
+
+  z-index: 1;
+  background-color: rgb(0 0 0 / 40%);
+  background-blend-mode: multiply;
+
+  transition: 0.7s;
+  border-radius: 19px;
+}
+
+.ancient-card:hover {
+
+
+  opacity: 1;
+
+
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+.azathoth-card {
+  background-image: url(./assets/Ancients/Azathoth.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+
+
+.cthulthu-card {
+  background-image: url(./assets/Ancients/Cthulthu.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+.iog-sothoth-card {
+  background-image: url(./assets/Ancients/IogSothoth.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+}
+
+.shub-niggurath-card {
+
+  background-image: url(./assets/Ancients/ShubNiggurath.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+*/
+
+.current-ancient-card {
+  /* width: 259px;
+  height: 336px;*/
+  /*width: 212px;
+  height: 278px;
+*/
+  /* width: 188px;
+  height: 243px;*/
+  width: 220px;
+  height: 290px;
+  border: 2px solid #7e7171;
+  max-width: 100%;
+  margin: 5px;
+  opacity: 0.5;
+
+  opacity: 1;
+
+  z-index: 1;
+
+
+  transition: 0.7s;
+  border-radius: 19px;
+  background-image: url(./assets/Ancients/Azathoth.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15px;
+}
+
+.change-ancient-btn {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 30px;
+  /*border: 2px solid #f5e3c1;*/
+  background-color: #44301d;
+  color: white;
+  border-radius: 15px;
+}
+
+.levels-container {
+
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.levels-desc {
+  background-image: url(./assets/levels/change-dif-level.png);
+  width: 119px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  /*border: 1px solid;*/
+  height: 185px;
+  align-self: end;
+  transition: 1s;
+}
+
+/*
+.level-btn {
+  width: 100px;
+  height: 50px;
+  background-color: aquamarine;
+  margin: 5px;
+  text-align: center;
+  padding: auto;
+}
+
+*/
+button {
+  transition: 1s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc6d13;
+}
+
+.level-btn {
+  width: 96px;
+  height: 30px;
+  background-color: #44301d;
+  margin: 5px 0;
+  text-align: center;
+  padding: auto;
+  /* border: none;*/
+  border-radius: 10px;
+  color: white;
+}
+
+.anc-set {
+  border-bottom: 3px solid #7c634275;
+  /* color: #7c6342; */
+  border-radius: 0 0 0 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.levels {
+  display: flex;
+  border-top: 3px solid#7c634275;
+  border-bottom: 3px solid #7c634275;
+  /* color: #7c6342; */
+  border-radius: 0 41px 41px 0;
+}
+
+.rules-btn-container {
+  width: 100%;
+  border-top: 3px solid#7c634275;
+  /* color: #7c6342; */
+  border-radius: 0 41px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.rules-btn {
+  width: 90px;
+  height: 43px;
+  /*border: none;*/
+  border-radius: 51px;
+  background: #4e2c05;
+  color: white;
+  margin: 5px;
+}
+
+.shuffle-btn {
+  width: 235px;
+  height: 70px;
+  background-color: #961515;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.cards-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.deck {
+
+  width: 223px;
+  height: 330px;
+  background-image: url(./assets/mythicCardBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  visibility: visible;
+  margin-right: 89px;
+  border-radius: 15px;
+  border: 2px solid wheat;
+  cursor: pointer;
+  transition: border 0.5s;
+}
+
+.deck:hover {
+  border: 2px solid #f8a409;
+}
+
+.current-card {
+  width: 223px;
+  height: 330px;
+  /* background-color: bisque; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  /* border: 2px solid wheat;*/
+  transition: 1s;
+}
+
+.tracker {
+  /*width: 50%;*/
+  /* height: 200px;*/
+  display: flex;
+  flex-direction: column;
+  /*position: absolute;*/
+
+  align-items: center;
+  top: 0;
+  right: 0;
+  color: black;
+  justify-content: center;
+  background-image: url(./assets/miph.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 341px;
+  height: 221px;
+  align-self: end;
+}
+
+
+.tracker-stage {
+  display: flex;
+  align-items: center;
+  margin-right: 22px;
+}
+
+
+
+.stage-item {
+  width: 30px;
+  height: 20px;
+  margin: 2.5px 5px;
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.stage-name {
+  width: 60px;
+  text-align: end;
+}
+
+.stage1-green {
+
+  background-color: #335b19;
+}
+
+.stage1-brown {
+  background-color: #b08500;
+}
+
+.stage1-blue {
+  background-color: #4e59a2;
+}
+
+
+
+.stage2-green {
+  background-color: #335b19;
+}
+
+.stage2-brown {
+  background-color: #b08500;
+}
+
+.stage2-blue {
+  background-color: #4e59a2;
+}
+
+
+
+.stage3-green {
+  background-color: #335b19;
+}
+
+.stage3-brown {
+  background-color: #b08500;
+}
+
+.stage3-blue {
+  background-color: #4e59a2;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid #f5e3c1;
+}
+
+.hidden-block {
+  visibility: hidden;
+}
+
+/*
+.ancient-card-active {
+  opacity: 1;
+}
+*/
+.level-btn-active {
+  background-color: lightcoral;
+}
+
+/*
+.ancient-card-active {
+  
+}*/
+
+
+
+.footer-information {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.github {
+  background: url(./assets/github.svg) no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.rss-link,
+.github-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.year {
+  padding: 5px;
+  text-align: end;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.rss {
+  background: url(./assets/rs_school_js.svg) no-repeat;
+  background-size: contain;
+  filter: invert(1);
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  opacity: .7;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.ancient-container-active {
+  /* display: flex;
+  background-color: #000000cc;*/
+  display: flex;
+  background-color: #000000cc;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.preset-title {
+  background-image: url('./assets/rules-title.png');
+  background-color: rgb(136 135 133 / 42%);
+  background-blend-mode: multiply;
+}
+
+.choose-anc-card-title {
+  color: white;
+  font-size: 50px;
+  height: 20px;
+}
+
+.ancient-cont-cards {
+  position: relative;
+  /*top: 25%;
+  left: 25%;*/
+  width: 700px;
+  height: 360px;
+}
+
+.rules-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  margin: auto;
+  visibility: visible;
+  background: #000000de;
+}
+
+.rules {
+  width: 780px;
+  background-image: url(./assets/rules.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 498px;
+  /* margin: auto; */
+
+}
+
+.non-active {
+  visibility: hidden;
+  z-index: -1;
+}
+
+.main-conent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
